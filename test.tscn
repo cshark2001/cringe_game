@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+emission_shape = 1
+emission_sphere_radius = 1000.0
+flag_disable_z = true
+direction = Vector3( 0, 0, 0 )
+spread = 0.0
+gravity = Vector3( 0, 100, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 58.47
+color = Color( 0.721569, 0, 1, 1 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Particles2D" type="Particles2D" parent="."]
+position = Vector2( 391.345, 172.326 )
+amount = 10000
+lifetime = 206.07
+speed_scale = 2.94
+process_material = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 391.345, 172.326 )
+current = true
+zoom = Vector2( 1, 3 )
